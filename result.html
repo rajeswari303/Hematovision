@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result - HematoVision</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="background-animated"></div>
+    <div class="container glass">
+        <h1>🔍 Prediction Result</h1>
+        <h2>The uploaded blood cell is predicted as:</h2>
+        <p><strong>{{ prediction }}</strong></p>
+        <img src="/static/{{ image_file }}" alt="Predicted Blood Cell Image">
+        <a href="/">← Try Another Image</a>
+    </div>
+</body>
+</html>

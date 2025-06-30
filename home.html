@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HematoVision - Blood Cell Classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="background-animated"></div>
+    <div class="container glass">
+        <h1>🔬 HematoVision</h1>
+        <h2>Advanced Blood Cell Classification</h2>
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <label class="custom-file-upload">
+                <input type="file" name="file" required>
+                <span>📤 Choose Blood Cell Image</span>
+            </label>
+            <button type="submit">🔎 Predict Cell Type</button>
+        </form>
+    </div>
+</body>
+</html>
